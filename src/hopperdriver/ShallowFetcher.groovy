@@ -15,36 +15,39 @@ class ShallowFetcher {
     static def run() {
 
         def courses = []
-        RemoteWebDriver driver = new FirefoxDriver()
 
+        for ( int i = 1; i < 21; i++ ) {
+            def onPage = fetchAndParsePage(i)
+            println "ON PAGE $i:"
+            onPage.each {
+                println "\t$it"
+            }
+        }
+    }
+
+    static List<Course> fetchAndParsePage(int pageNumber) {
+
+        // Set up the WebDriver.
+        println "Fetching page $pageNumber..."
+        RemoteWebDriver driver = new FirefoxDriver()
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get("https://hopper.austincollege.edu/hlive/webhopper");
         driver.findElement(By.linkText("Search for Courses")).click();
         driver.findElement(By.name("SUBMIT2")).submit();
+
+        // Switch to the right page.
+        driver.findElement(By.name("JUMP*Grp:WSS.COURSE.SECTIONS*TOP")).sendKeys("$pageNumber");
+        driver.findElements(By.cssSelector(/input[value="JUMP"]/))[0].click()
+        Thread.sleep(500);
+
+        // Extract basic course data.
         def html = Util.cleanAndConvertToXml(driver.pageSource)
+        List<Course> coursesOnPage = findInNode(html) { it.name() == "table" && it.@summary == 'Sections' }.tbody.tr.collect { RowParser.parseRow(it) }.findAll { it != null }
 
-        int i = 1;
-        def lastPageContents = ""
-        while (true) {
-            println "PAGE $i..."
+        coursesOnPage.each { parseDetailsPage(it, driver); }
 
-            List<Course> coursesOnPage = findInNode(html) { it.name() == "table" && it.@summary == 'Sections' }.tbody.tr.collect { RowParser.parseRow(it) }.findAll { it != null }
-
-            coursesOnPage.each { course ->
-                parseDetailsPage(course, driver);
-                courses << course;
-            }
-
-
-            driver.findElements(By.cssSelector(/input[value="NEXT"]/))[0].click()
-            Thread.sleep(500);
-            if (driver.pageSource == lastPageContents)
-                break;
-
-            i++;
-            lastPageContents = driver.pageSource;
-        }
-
+        driver.close()
+        return coursesOnPage;
     }
 
     static def parseDetailsPage(Course course, RemoteWebDriver driver) {
