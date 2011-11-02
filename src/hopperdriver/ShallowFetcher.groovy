@@ -61,6 +61,8 @@ class ShallowFetcher {
 
         // Extract the details.
         course.details = extractDescription(driver.pageSource)
+        course.professors = extractProfessors(driver.pageSource)
+        println course.professors
         Thread.sleep(800)
 
         // Close the window and switch back.
@@ -76,6 +78,17 @@ class ShallowFetcher {
 
     static String extractDescription(pageSource) {
         findInNode(Util.cleanAndConvertToXml(pageSource)) { it.@id == "VAR3" }
+    }
+
+    static List<Map> extractProfessors(pageSource) {
+        int index = 0;
+        return findInNode(Util.cleanAndConvertToXml(pageSource)) { it.@id == "GROUP_Grp_LIST_VAR7" }.table.tbody.tr.collect{extractProfessor(it, index++)}.collect { it != null }
+    }
+
+    static Map extractProfessor(tr, index) {
+        println "Extracting " + tr.td[1].toString() + "..."
+        if (index > 0)
+            [name: tr.td[1].toString(), email: tr.td[4].toString()]
     }
 
     static String waitForHandle(RemoteWebDriver driver, String currentHandle) {

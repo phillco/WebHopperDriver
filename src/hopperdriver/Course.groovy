@@ -2,7 +2,7 @@ package hopperdriver
 
 class Course {
 
-    def professors = []
+    List<Map> professors = []
 
     boolean open;
     int zap
