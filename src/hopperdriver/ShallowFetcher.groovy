@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit
 import org.openqa.selenium.remote.RemoteWebDriver
 import org.omg.CORBA.Environment
 import org.json.JSONObject
+import com.google.gson.Gson
 
 class ShallowFetcher {
 
@@ -16,13 +17,13 @@ class ShallowFetcher {
 
         def courses = []
 
-        for ( int i = 1; i < 21; i++ ) {
-            def onPage = fetchAndParsePage(i)
-            println "ON PAGE $i:"
-            onPage.each {
-                println "\t$it"
-            }
+        for (int i = 1; i <= 1; i++) {
+            courses.addAll(fetchAndParsePage(i))
+            println "Page $i complete."
         }
+
+        println "${courses.size()} courses parsed:"
+        println new Gson().toJson(courses)
     }
 
     static List<Course> fetchAndParsePage(int pageNumber) {
@@ -44,6 +45,7 @@ class ShallowFetcher {
         def html = Util.cleanAndConvertToXml(driver.pageSource)
         List<Course> coursesOnPage = findInNode(html) { it.name() == "table" && it.@summary == 'Sections' }.tbody.tr.collect { RowParser.parseRow(it) }.findAll { it != null }
 
+        // Fetch detailed information for each course (slow, requires a new page request for each).
         coursesOnPage.each { parseDetailsPage(it, driver); }
 
         driver.close()

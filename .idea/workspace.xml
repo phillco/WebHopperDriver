@@ -15,8 +15,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e88faa7-d7e3-40e5-a9be-ff7a8fc39c9e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hopperdriver/RowParser.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hopperdriver/Main.java" afterPath="$PROJECT_DIR$/src/hopperdriver/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hopperdriver/ShallowFetcher.groovy" afterPath="$PROJECT_DIR$/src/hopperdriver/ShallowFetcher.groovy" />
     </list>
     <ignored path="WebHopperDriver.iws" />
@@ -88,7 +87,7 @@
       <file leaf-file-name="ShallowFetcher.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hopperdriver/ShallowFetcher.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="5" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.60482985">
+            <state line="48" column="8" selection-start="1811" selection-end="1811" vertical-scroll-proportion="0.75301206">
               <folding />
             </state>
           </provider>
@@ -97,7 +96,7 @@
       <file leaf-file-name="FirefoxDriver.class" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/lib/selenium-java-2.11.0.jar!/org/openqa/selenium/firefox/FirefoxDriver.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="73" selection-start="225" selection-end="225" vertical-scroll-proportion="-2.4">
+            <state line="5" column="73" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -106,7 +105,7 @@
       <file leaf-file-name="RemoteWebDriver.class" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/lib/selenium-java-2.11.0.jar!/org/openqa/selenium/remote/RemoteWebDriver.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="-2.4">
+            <state line="5" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -179,6 +178,48 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebHopperDriver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebHopperDriver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebHopperDriver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebHopperDriver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebHopperDriver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebHopperDriver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hopperdriver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
@@ -218,34 +259,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="hopperdriver" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebHopperDriver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebHopperDriver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebHopperDriver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebHopperDriver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hopperdriver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -491,7 +504,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1908226" sideWeight="0.5606383" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4393617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4393617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -553,63 +566,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hopperdriver/Course.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="42" selection-start="492" selection-end="492" vertical-scroll-proportion="0.46103182">
-          <folding />
-        </state>
+        <state line="28" column="42" selection-start="492" selection-end="492" vertical-scroll-proportion="0.46103182" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../CourseSearch/grails-app/domain/coursesearch/Course.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="4" selection-start="841" selection-end="867" vertical-scroll-proportion="0.63474387">
-          <folding />
-        </state>
+        <state line="38" column="4" selection-start="841" selection-end="867" vertical-scroll-proportion="0.63474387" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../CourseSearch/grails-app/services/coursesearch/data/fetch/CourseDataService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="2292" selection-end="2292" vertical-scroll-proportion="0.8682766">
-          <folding />
-        </state>
+        <state line="76" column="0" selection-start="2292" selection-end="2292" vertical-scroll-proportion="0.8682766" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hopperdriver/Util.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="5" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.7080132">
-          <folding />
-        </state>
+        <state line="43" column="5" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.7080132" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hopperdriver/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="8" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hopperdriver/RowParser.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="9" selection-start="2005" selection-end="2005" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/selenium-java-2.11.0.jar!/org/openqa/selenium/remote/RemoteWebDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="-2.4">
-          <folding />
-        </state>
+        <state line="4" column="8" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/selenium-java-2.11.0.jar!/org/openqa/selenium/firefox/FirefoxDriver.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="73" selection-start="225" selection-end="225" vertical-scroll-proportion="-2.4">
-          <folding />
-        </state>
+        <state line="5" column="73" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/selenium-java-2.11.0.jar!/org/openqa/selenium/remote/RemoteWebDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hopperdriver/RowParser.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="9" selection-start="2005" selection-end="2005" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hopperdriver/ShallowFetcher.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="5" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.60482985">
+        <state line="48" column="8" selection-start="1811" selection-end="1811" vertical-scroll-proportion="0.75301206">
           <folding />
         </state>
       </provider>
