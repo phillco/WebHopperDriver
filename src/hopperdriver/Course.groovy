@@ -11,7 +11,7 @@ class Course {
     boolean instructorConsentRequired;
     String reqCode;
 
-    String department // BIO
+    String departmentCode // BIO
     int courseNumber // 652
     char section // A
     boolean isLab = false

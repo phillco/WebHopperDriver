@@ -20,13 +20,11 @@ class RowParser {
 
             course.instructorConsentRequired = (row.td[4] == 'Y');
             course.reqCode = (row.td[5])
+            course.departmentCode = row.td[7].toString().split('\\*')[0];
 
             // Store the course's ZAP (our ID).
             course.zap = row.td[6].toString().length() > 0 ? Integer.parseInt(row.td[6].toString().trim()) : 0;
 
-            // Find the department (or create a new one).
-            def departmentString = row.td[7].toString().split('\\*')[0];
-            course.department = departmentString
             def courseNumber = row.td[7].toString().split('\\*')[1].toString();
 
             // Some courses are labs
