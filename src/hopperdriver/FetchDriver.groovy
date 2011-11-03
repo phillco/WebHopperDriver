@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit
 import org.openqa.selenium.remote.RemoteWebDriver
 
 import com.google.gson.Gson
+import org.openqa.selenium.support.ui.Select
 
 /**
  * Handles the acquiring & extraction of data from WebHopper.
@@ -16,11 +17,12 @@ class FetchDriver {
 
     static def run() {
 
+        def term = "11/FA"
         def courses = []
 
         // Fetch all 20 pages.
         for (int i = 1; i <= 20; i++) {
-            courses.addAll(fetchAndParsePage(i))
+            courses.addAll(fetchAndParsePage(term, i))
             println "Page $i complete."
         }
 
@@ -28,13 +30,13 @@ class FetchDriver {
         println "${courses.size()} courses parsed: $json"
 
         // Save the json to a file.
-        new File('courses.json').write(json);
+        new File("courses_${term.replaceAll("/", "")}.json").write(json);
     }
 
     /**
      * Creates a new WebDriver session, jumps to page <pageNumber> and extracts and returns the data.
      */
-    static List<Course> fetchAndParsePage(int pageNumber) {
+    static List<Course> fetchAndParsePage(String term, int pageNumber) {
 
         // Set up the WebDriver.
         println "Fetching page $pageNumber..."
@@ -42,6 +44,9 @@ class FetchDriver {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get("https://hopper.austincollege.edu/hlive/webhopper");
         driver.findElement(By.linkText("Search for Courses")).click();
+
+        // Select the term.
+        new Select(driver.findElement(By.name("VAR1"))).selectByValue(term)
         driver.findElement(By.name("SUBMIT2")).submit();
 
         // Switch to the right page.
