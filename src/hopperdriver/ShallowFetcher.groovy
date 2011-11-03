@@ -10,6 +10,7 @@ import org.openqa.selenium.remote.RemoteWebDriver
 import org.omg.CORBA.Environment
 import org.json.JSONObject
 import com.google.gson.Gson
+import com.thoughtworks.selenium.Wait
 
 class ShallowFetcher {
 
@@ -17,13 +18,15 @@ class ShallowFetcher {
 
         def courses = []
 
-        for (int i = 1; i <= 1; i++) {
+        for (int i = 1; i <= 20; i++) {
             courses.addAll(fetchAndParsePage(i))
             println "Page $i complete."
         }
 
         println "${courses.size()} courses parsed:"
-        println new Gson().toJson(courses)
+        def json = new Gson().toJson(courses)
+        println json;
+        new File('courses.json').write(json);
     }
 
     static List<Course> fetchAndParsePage(int pageNumber) {
@@ -60,20 +63,21 @@ class ShallowFetcher {
         driver.switchTo().window(waitForHandle(driver, originalHandle))
 
         // Extract the details.
-        course.details = extractDescription(driver.pageSource)
-        course.professors = extractProfessors(driver.pageSource)
-        println course.professors
-        Thread.sleep(800)
+        try {
+            Thread.sleep(600)
+            course.details = extractDescription(driver.pageSource)
+            course.professors = extractProfessors(driver.pageSource)
+        }
+        catch (Exception e) {
+            println "Error parsing details for ${course} (${e})"
+            e.printStackTrace()
+        }
+        Thread.sleep(150)
 
         // Close the window and switch back.
         driver.close()
         driver.switchTo().window(originalHandle); // Switch back to parent window.
         return course;
-    }
-
-
-    static String toJson(list) {
-        new JSONObject().putAll(list).toString()
     }
 
     static String extractDescription(pageSource) {
@@ -82,12 +86,11 @@ class ShallowFetcher {
 
     static List<Map> extractProfessors(pageSource) {
         int index = 0;
-        return findInNode(Util.cleanAndConvertToXml(pageSource)) { it.@id == "GROUP_Grp_LIST_VAR7" }.table.tbody.tr.collect{extractProfessor(it, index++)}.collect { it != null }
+        return findInNode(Util.cleanAndConvertToXml(pageSource)) { it.@id == "GROUP_Grp_LIST_VAR7" }.table.tbody.tr.collect {extractProfessor(it, index++)}.findAll { it != null }
     }
 
     static Map extractProfessor(tr, index) {
-        println "Extracting " + tr.td[1].toString() + "..."
-        if (index > 0)
+        if (index > 0 && tr)
             [name: tr.td[1].toString(), email: tr.td[4].toString()]
     }
 
