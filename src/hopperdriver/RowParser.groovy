@@ -40,7 +40,7 @@ class RowParser {
             // Process the professors (sometimes there are multiple ones).
             course.professors = row.td[9].div.input.@value.toString().split('<BR>')
             course.room = row.td[10].toString().trim();
-            course.schedules = row.td[11].div.input.@value.toString().split('<BR>')
+            course.schedules = row.td[11].div.input.@value.toString().split('<BR>').collect { it.toString() }
             course.comments = row.td[12].toString();
             course;
         }

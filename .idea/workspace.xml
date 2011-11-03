@@ -17,6 +17,7 @@
     <list default="true" id="8e88faa7-d7e3-40e5-a9be-ff7a8fc39c9e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hopperdriver/Course.groovy" afterPath="$PROJECT_DIR$/src/hopperdriver/Course.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hopperdriver/FetchDriver.groovy" afterPath="$PROJECT_DIR$/src/hopperdriver/FetchDriver.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hopperdriver/RowParser.groovy" afterPath="$PROJECT_DIR$/src/hopperdriver/RowParser.groovy" />
     </list>
     <ignored path="WebHopperDriver.iws" />
@@ -85,10 +86,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FetchDriver.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="FetchDriver.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hopperdriver/FetchDriver.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="30" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
+            <state line="21" column="31" selection-start="423" selection-end="423" vertical-scroll-proportion="0.42168674">
               <folding />
             </state>
           </provider>
@@ -103,10 +104,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Course.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Course.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hopperdriver/Course.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="17" selection-start="213" selection-end="213" vertical-scroll-proportion="0.21405049">
+            <state line="4" column="12" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -115,7 +116,7 @@
       <file leaf-file-name="RowParser.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hopperdriver/RowParser.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="73" selection-start="869" selection-end="869" vertical-scroll-proportion="0.0">
+            <state line="42" column="109" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -145,10 +146,10 @@
         <option value="$PROJECT_DIR$/../Kangaroo/CourseSearch.iml" />
         <option value="$PROJECT_DIR$/src/hopperdriver/ShallowFetcher.groovy" />
         <option value="$PROJECT_DIR$/src/hopperdriver/Util.groovy" />
-        <option value="$PROJECT_DIR$/src/hopperdriver/FetchDriver.groovy" />
         <option value="$PROJECT_DIR$/src/hopperdriver/PopupParser.groovy" />
         <option value="$PROJECT_DIR$/src/hopperdriver/Course.groovy" />
         <option value="$PROJECT_DIR$/src/hopperdriver/RowParser.groovy" />
+        <option value="$PROJECT_DIR$/src/hopperdriver/FetchDriver.groovy" />
       </list>
     </option>
   </component>
@@ -496,8 +497,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16731954" sideWeight="0.67021275" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4393617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16731954" sideWeight="0.5606383" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4393617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -590,9 +591,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hopperdriver/FetchDriver.groovy">
+    <entry file="file://$PROJECT_DIR$/src/hopperdriver/PopupParser.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="30" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
+        <state line="22" column="30" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hopperdriver/Course.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="12" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hopperdriver/RowParser.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="109" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -604,23 +619,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hopperdriver/PopupParser.groovy">
+    <entry file="file://$PROJECT_DIR$/src/hopperdriver/FetchDriver.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="30" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hopperdriver/RowParser.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="73" selection-start="869" selection-end="869" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hopperdriver/Course.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="17" selection-start="213" selection-end="213" vertical-scroll-proportion="0.21405049">
+        <state line="21" column="31" selection-start="423" selection-end="423" vertical-scroll-proportion="0.42168674">
           <folding />
         </state>
       </provider>

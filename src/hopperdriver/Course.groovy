@@ -22,10 +22,10 @@ class Course {
     String description
     String comments;
 
-    def schedules = []
+    List<String> schedules = []
 
     boolean textbooksParsed
 
-    String toString() { "$name ($details)" }
+    String toString() { "$name ($description)" }
 
 }
