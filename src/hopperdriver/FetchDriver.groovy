@@ -19,7 +19,7 @@ class FetchDriver {
         def courses = []
 
         // Fetch all 20 pages.
-        for (int i = 1; i <= 20; i++) {
+        for (int i = 1; i <= 1; i++) {
             courses.addAll(fetchAndParsePage(i))
             println "Page $i complete."
         }

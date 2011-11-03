@@ -19,7 +19,7 @@ class Course {
     String name;
     String detailsLinkId;
     String room;
-    String details
+    String description
     String comments;
 
     def schedules = []

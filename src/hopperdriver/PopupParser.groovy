@@ -20,7 +20,7 @@ class PopupParser {
         // Extract the details.
         try {
             Thread.sleep(600)
-            course.details = extractDescription(driver.pageSource)
+            course.description = extractDescription(driver.pageSource)
             course.professors = extractProfessors(driver.pageSource)
         }
         catch (Exception e) {

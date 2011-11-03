@@ -15,13 +15,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e88faa7-d7e3-40e5-a9be-ff7a8fc39c9e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hopperdriver/FetchDriver.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hopperdriver/PopupParser.groovy" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/hopperdriver/ShallowFetcher.groovy" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hopperdriver/Main.java" afterPath="$PROJECT_DIR$/src/hopperdriver/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hopperdriver/RowParser.groovy" afterPath="$PROJECT_DIR$/src/hopperdriver/RowParser.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hopperdriver/Util.groovy" afterPath="$PROJECT_DIR$/src/hopperdriver/Util.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hopperdriver/Course.groovy" afterPath="$PROJECT_DIR$/src/hopperdriver/Course.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hopperdriver/FetchDriver.groovy" afterPath="$PROJECT_DIR$/src/hopperdriver/FetchDriver.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hopperdriver/PopupParser.groovy" afterPath="$PROJECT_DIR$/src/hopperdriver/PopupParser.groovy" />
     </list>
     <ignored path="WebHopperDriver.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,28 +85,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FetchDriver.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FetchDriver.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hopperdriver/FetchDriver.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="101" selection-start="835" selection-end="835" vertical-scroll-proportion="0.4445664">
+            <state line="21" column="30" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Util.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hopperdriver/Util.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="4" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PopupParser.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PopupParser.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hopperdriver/PopupParser.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+            <state line="22" column="30" selection-start="772" selection-end="772" vertical-scroll-proportion="0.34577388">
               <folding />
             </state>
           </provider>
@@ -119,25 +106,7 @@
       <file leaf-file-name="Course.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hopperdriver/Course.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="12" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FirefoxDriver.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/selenium-java-2.11.0.jar!/org/openqa/selenium/firefox/FirefoxDriver.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="73" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RemoteWebDriver.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/selenium-java-2.11.0.jar!/org/openqa/selenium/remote/RemoteWebDriver.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+            <state line="21" column="22" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -171,15 +140,15 @@
         <option value="$PROJECT_DIR$/src/growl/Growl.java" />
         <option value="$PROJECT_DIR$/src/hopperdriver/Main.java" />
         <option value="$PROJECT_DIR$/src/hopperdriver/RowParser.java" />
-        <option value="$PROJECT_DIR$/src/hopperdriver/Course.groovy" />
         <option value="$PROJECT_DIR$/courses.json" />
         <option value="$PROJECT_DIR$/../Kangaroo/CourseSearch-grailsPlugins.iml" />
         <option value="$PROJECT_DIR$/../Kangaroo/CourseSearch.iml" />
         <option value="$PROJECT_DIR$/src/hopperdriver/ShallowFetcher.groovy" />
         <option value="$PROJECT_DIR$/src/hopperdriver/Util.groovy" />
         <option value="$PROJECT_DIR$/src/hopperdriver/RowParser.groovy" />
-        <option value="$PROJECT_DIR$/src/hopperdriver/PopupParser.groovy" />
         <option value="$PROJECT_DIR$/src/hopperdriver/FetchDriver.groovy" />
+        <option value="$PROJECT_DIR$/src/hopperdriver/Course.groovy" />
+        <option value="$PROJECT_DIR$/src/hopperdriver/PopupParser.groovy" />
       </list>
     </option>
   </component>
@@ -597,11 +566,6 @@
         <state line="76" column="0" selection-start="2292" selection-end="2292" vertical-scroll-proportion="0.8682766" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hopperdriver/Course.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="12" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/selenium-java-2.11.0.jar!/org/openqa/selenium/firefox/FirefoxDriver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="73" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0" />
@@ -610,13 +574,6 @@
     <entry file="jar://$PROJECT_DIR$/lib/selenium-java-2.11.0.jar!/org/openqa/selenium/remote/RemoteWebDriver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hopperdriver/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/courses.json">
@@ -628,7 +585,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hopperdriver/Util.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="4" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0">
+        <state line="9" column="4" selection-start="240" selection-end="240" vertical-scroll-proportion="0.115257956">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hopperdriver/FetchDriver.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="30" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hopperdriver/Course.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="22" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hopperdriver/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -642,14 +620,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hopperdriver/PopupParser.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hopperdriver/FetchDriver.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="101" selection-start="835" selection-end="835" vertical-scroll-proportion="0.4445664">
+        <state line="22" column="30" selection-start="772" selection-end="772" vertical-scroll-proportion="0.34577388">
           <folding />
         </state>
       </provider>
