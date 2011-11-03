@@ -2,6 +2,9 @@ package hopperdriver
 
 class RowParser {
 
+    /**
+     * Takes a <tr> row from the results table and spits back a Course with its data.
+     */
     public static Course parseRow(row) {
         def course = new Course(name: row.td[8].text());
         try {

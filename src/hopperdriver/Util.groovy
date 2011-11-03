@@ -6,6 +6,8 @@ import org.htmlcleaner.SimpleXmlSerializer
 
 class Util {
 
+    static def findInNode(node, c) { node.depthFirst().collect { it }.find(c)}
+
     /**
      * Converts the given HTML page into a Groovy-compatible XML tree.
      */
