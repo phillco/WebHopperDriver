@@ -15,10 +15,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e88faa7-d7e3-40e5-a9be-ff7a8fc39c9e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hopperdriver/Course.groovy" afterPath="$PROJECT_DIR$/src/hopperdriver/Course.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hopperdriver/FetchDriver.groovy" afterPath="$PROJECT_DIR$/src/hopperdriver/FetchDriver.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hopperdriver/RowParser.groovy" afterPath="$PROJECT_DIR$/src/hopperdriver/RowParser.groovy" />
     </list>
     <ignored path="WebHopperDriver.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -107,7 +104,7 @@
       <file leaf-file-name="Course.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hopperdriver/Course.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="12" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
+            <state line="20" column="84" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -479,11 +476,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="22" width="1836" height="1058" extended-state="0" />
+    <frame x="2" y="22" width="1836" height="1058" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296027" sideWeight="0.5606383" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -598,13 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hopperdriver/Course.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="12" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hopperdriver/RowParser.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="109" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.0">
@@ -615,6 +605,13 @@
     <entry file="file://$PROJECT_DIR$/src/hopperdriver/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hopperdriver/Course.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="84" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
