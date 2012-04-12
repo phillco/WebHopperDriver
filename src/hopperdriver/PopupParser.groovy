@@ -1,7 +1,7 @@
 package hopperdriver
 
-import org.openqa.selenium.remote.RemoteWebDriver
 import org.openqa.selenium.By
+import org.openqa.selenium.remote.RemoteWebDriver
 
 class PopupParser {
 
@@ -18,14 +18,17 @@ class PopupParser {
         driver.switchTo().window(waitForHandle(driver, originalHandle))
 
         // Extract the details.
-        try {
-            Thread.sleep(600)
-            course.description = extractDescription(driver.pageSource)
-            course.professors = extractProfessors(driver.pageSource)
-        }
-        catch (Exception e) {
-            println "Error parsing details for ${course} (${e})"
-            e.printStackTrace()
+        for (int i = 1; i < 7; i++) {
+            try {
+                Thread.sleep(600)
+                course.description = extractDescription(driver.pageSource)
+                course.professors = extractProfessors(driver.pageSource)
+                break;
+            }
+            catch (Exception e) {
+                println "Error parsing (attempt $i) details for ${course} (${e})"
+                e.printStackTrace()
+            }
         }
         Thread.sleep(150)
 
@@ -41,7 +44,11 @@ class PopupParser {
 
     static List<Map> extractProfessors(pageSource) {
         int index = 0;
-        return Util.findInNode(Util.cleanAndConvertToXml(pageSource)) { it.@id == "GROUP_Grp_LIST_VAR7" }.table.tbody.tr.collect {extractProfessor(it, index++)}.findAll { it != null }
+        def html = Util.cleanAndConvertToXml(pageSource)
+        def block = Util.findInNode(html) { it.@id == "GROUP_Grp_LIST_VAR7" }
+        def table = block.table.tbody
+
+        return table.tr.collect {extractProfessor(it, index++)}.findAll { it != null }
     }
 
     static Map extractProfessor(tr, index) {

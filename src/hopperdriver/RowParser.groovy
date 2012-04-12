@@ -48,6 +48,5 @@ class RowParser {
         course.schedules = row.td[12].div.input.@value.toString().split('<BR>').collect { it.toString() }
         course.comments = row.td[13].toString();
         course;
-
     }
 }
