@@ -14,6 +14,7 @@ class Course {
     String departmentCode // BIO
     int courseNumber // 652
     char section // A
+    boolean isSDU = false
     boolean isLab = false
 
     String name;

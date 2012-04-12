@@ -17,7 +17,7 @@ class FetchDriver {
 
     static def run() {
 
-        def term = "11/FA"
+        def term = "12/SP"
         def courses = []
 
         // Fetch all 20 pages.

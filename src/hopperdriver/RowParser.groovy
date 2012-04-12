@@ -11,8 +11,8 @@ class RowParser {
             return null;
 
 
-        def course = new Course(name: row.td[8].text());
-        course.detailsLinkId = row.td[8].div?.a?.@id;
+        def course = new Course(name: row.td[9].text());
+        course.detailsLinkId = row.td[9].div?.a?.@id;
         course.open = (row.td[2].text() == 'Open');
 
         // Calculate the number of free/used seats.
@@ -27,9 +27,10 @@ class RowParser {
         course.departmentCode = row.td[7].toString().split('\\*')[0];
 
         // Store the course's ZAP (our ID).
-        course.zap = row.td[6].toString().length() > 0 ? Integer.parseInt(row.td[6].toString().trim()) : 0;
+        course.isSDU = row.td[6].toString().trim().equals("N");
+        course.zap = row.td[7].toString().length() > 0 ? Integer.parseInt(row.td[7].toString().trim()) : 0;
 
-        def courseNumber = row.td[7].toString().split('\\*')[1].toString();
+        def courseNumber = row.td[8].toString().split('\\*')[1].toString();
 
         // Some courses are labs
         if (courseNumber.endsWith("L")) {
@@ -39,13 +40,13 @@ class RowParser {
         else
             course.courseNumber = (courseNumber as Integer);
 
-        course.section = (row.td[7].toString().split('\\*')[2] as Character);
+        course.section = (row.td[8].toString().split('\\*')[2] as Character);
 
         // Process the professors (sometimes there are multiple ones).
-        course.professors = row.td[9].div.input.@value.toString().split('<BR>')
-        course.room = row.td[10].toString().trim();
-        course.schedules = row.td[11].div.input.@value.toString().split('<BR>').collect { it.toString() }
-        course.comments = row.td[12].toString();
+        course.professors = row.td[10].div.input.@value.toString().split('<BR>')
+        course.room = row.td[11].toString().trim();
+        course.schedules = row.td[12].div.input.@value.toString().split('<BR>').collect { it.toString() }
+        course.comments = row.td[13].toString();
         course;
 
     }
