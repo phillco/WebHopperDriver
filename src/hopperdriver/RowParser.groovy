@@ -24,7 +24,7 @@ class RowParser {
 
         course.instructorConsentRequired = (row.td[4] == 'Y');
         course.reqCode = (row.td[5])
-        course.departmentCode = row.td[7].toString().split('\\*')[0];
+        course.departmentCode = row.td[8].toString().split('\\*')[0];
 
         // Store the course's ZAP (our ID).
         course.isSDU = row.td[6].toString().trim().equals("N");
