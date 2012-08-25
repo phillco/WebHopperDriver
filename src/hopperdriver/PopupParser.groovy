@@ -27,7 +27,6 @@ class PopupParser {
             }
             catch (Exception e) {
                 println "Error parsing (attempt $i) details for ${course} (${e})"
-                e.printStackTrace()
             }
         }
         Thread.sleep(150)

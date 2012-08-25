@@ -1,13 +1,10 @@
 package hopperdriver
 
-import org.openqa.selenium.By
-
-import org.openqa.selenium.firefox.FirefoxDriver
-
-import java.util.concurrent.TimeUnit
-import org.openqa.selenium.remote.RemoteWebDriver
-
 import com.google.gson.Gson
+import java.util.concurrent.TimeUnit
+import org.openqa.selenium.By
+import org.openqa.selenium.firefox.FirefoxDriver
+import org.openqa.selenium.remote.RemoteWebDriver
 import org.openqa.selenium.support.ui.Select
 
 /**
@@ -17,7 +14,7 @@ class FetchDriver {
 
     static def run() {
 
-        def term = "12/SP"
+        def term = "12/SU"
         def courses = []
 
         // Fetch all 20 pages.
@@ -41,7 +38,7 @@ class FetchDriver {
         // Set up the WebDriver.
         println "Fetching page $pageNumber..."
         RemoteWebDriver driver = new FirefoxDriver()
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(9, TimeUnit.SECONDS);
         driver.get("https://hopper.austincollege.edu/hlive/webhopper");
         driver.findElement(By.linkText("Search for Courses")).click();
 
@@ -62,6 +59,11 @@ class FetchDriver {
         coursesOnPage.each { PopupParser.getAndParseDetailsPage(it, driver); }
 
         driver.close()
+
+        println "${coursesOnPage.size()} courses parsed on page ${pageNumber}"
+        def json = new Gson().toJson(coursesOnPage)
+        new File("courses_${term.replaceAll("/", "")}_${pageNumber}.json").write(json);
+
         return coursesOnPage;
     }
 }
