@@ -14,7 +14,7 @@ class FetchDriver {
 
     static def run() {
 
-        def term = "12/SU"
+        def term = "12/FA"
         def courses = []
 
         // Fetch all 20 pages.
@@ -38,7 +38,7 @@ class FetchDriver {
         // Set up the WebDriver.
         println "Fetching page $pageNumber..."
         RemoteWebDriver driver = new FirefoxDriver()
-        driver.manage().timeouts().implicitlyWait(9, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         driver.get("https://hopper.austincollege.edu/hlive/webhopper");
         driver.findElement(By.linkText("Search for Courses")).click();
 
